@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.title {
+  text-align: center;
+  margin: 2rem;
+}
+
+.board {
+  display: grid;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.258);
+  width: 500px;
+  height: 500px;
+}
+
+.square {
+  border: 1px solid black;
+}
+
+.buttons {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#black-btn {
+  background-color: black;
+  color: white;
+}
+#eraser-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+#random-btn {
+  background: linear-gradient(to right, #3498db, #e74c3c);
+  color: #fff;
+}
+#random-btn:hover {
+  background: linear-gradient(
+    to right,
+    #e74c3c,
+    #3498db
+  ); /* Cambia los colores del gradiente cuando el ratón está encima */
+}
+#clean-btn {
+  color: black;
+  background-color: rgb(164, 164, 164);
+}
+.input-size {
+  width: 6.25rem;
+  padding: 0.625rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.input-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}

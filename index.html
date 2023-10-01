@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Etch-a-Sketch</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">SketchPad</h1>
+      <div class="content">
+        <div class="board" id="board"></div>
+        <div class="buttons">
+          <button id="black-btn">Black</button>
+          <button id="eraser-btn">Eraser</button>
+          <button id="random-btn">Random</button>
+          <button id="clean-btn">Clean All</button>
+        </div>
+        <div class="input-container">
+          <input
+            type="text"
+            placeholder="size of board"
+            class="input-size"
+            id="input-size"
+            value="16"
+          />
+          <button id="set-size-btn">Set Size</button>
+          <p id="text-error"></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
