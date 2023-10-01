@@ -5,4 +5,4 @@
 - CSS
 - JAVASCRIPT
 
-Live Page:
+Live Page: https://nickgv.github.io/Etch-a-Sketch/
