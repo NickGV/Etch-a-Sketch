@@ -1,8 +1,8 @@
-#Etch a Sketch
+# Etch a Sketch
 
-##Create with
-.HTML
-.CSS
-.JAVASCRIPT
+## Create with
+- HTML
+- CSS
+- JAVASCRIPT
 
 Live Page:
