@@ -51,9 +51,24 @@ function getRandomRgb() {
   return "rgb(" + r + ", " + g + ", " + b + ")";
 }
 
-blackBtn.addEventListener("click", () => colorPicker("black"));
-eraserBtn.addEventListener("click", () => colorPicker("white"));
-randomBtn.addEventListener("click", () => colorPicker("random"));
+blackBtn.addEventListener("click", () => {
+  colorPicker("black");
+  blackBtn.classList.add("active");
+  eraserBtn.classList.remove("active");
+  randomBtn.classList.remove("active");
+});
+eraserBtn.addEventListener("click", () => {
+  colorPicker("white");
+  blackBtn.classList.remove("active");
+  eraserBtn.classList.add("active");
+  randomBtn.classList.remove("active");
+});
+randomBtn.addEventListener("click", () => {
+  colorPicker("random");
+  blackBtn.classList.remove("active");
+  eraserBtn.classList.remove("active");
+  randomBtn.classList.add("active");
+});
 
 sizeBtn.addEventListener("click", () => {
   if (sizeInput.value < 2 || sizeInput.value > 100) {
